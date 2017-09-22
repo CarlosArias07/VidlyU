@@ -30,6 +30,17 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
+        public ActionResult MoviesList()
+        {
+            var movies = new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Shrek" },
+                new Movie { Id = 2, Name = "Wall-e" }
+            };
+
+            return View(movies);
+        }
+
         #region CUSTOM ROUTES EXAMPLE
         /*("movies/released/{year}/{month:regex(\\d{4}):range(1, 12)}")]
         public ActionResult ByReleaseDate(int year, int month)
