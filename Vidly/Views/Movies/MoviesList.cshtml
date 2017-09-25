@@ -1,31 +1,33 @@
-﻿@model List<Vidly.Models.Movie>
+﻿@model IEnumerable<Vidly.Models.Movie>
 @{
     ViewBag.Title = "MoviesList";
 }
 
 <h2>Movies</h2>
 
-@if (Model.Count == 0)
+@if (!Model.Any())
 {
     <text>We don´t have any movies yet</text>
 }
 else
 {
     <table class="table table-bordered table-hover">
-        <tr>
-            <td>
-                <b>Movie</b>
-            </td>
-        </tr>
-        @foreach (var movie in Model)
-        {
+        <thead>
             <tr>
-                <td>
-                    @movie.Name
-                </td>
-
+                <th>Movie</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>
+                        @movie.Name
+                    </td>
+
+                </tr>
+            }
+        </tbody>
     </table>
 }
 
