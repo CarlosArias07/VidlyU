@@ -223,6 +223,34 @@
     <Compile Include="Migrations\201709251756569_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201709251756569_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709261527590_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201709261527590_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201709261527590_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261532187_UpdateNameInMembershipTypes.cs" />
+    <Compile Include="Migrations\201709261532187_UpdateNameInMembershipTypes.Designer.cs">
+      <DependentUpon>201709261532187_UpdateNameInMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261548293_UpdateFixWrongData.cs" />
+    <Compile Include="Migrations\201709261548293_UpdateFixWrongData.Designer.cs">
+      <DependentUpon>201709261548293_UpdateFixWrongData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261631313_AddBirthdateToCustomers.cs" />
+    <Compile Include="Migrations\201709261631313_AddBirthdateToCustomers.Designer.cs">
+      <DependentUpon>201709261631313_AddBirthdateToCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261633155_UpdateBirthdateCustomers.cs" />
+    <Compile Include="Migrations\201709261633155_UpdateBirthdateCustomers.Designer.cs">
+      <DependentUpon>201709261633155_UpdateBirthdateCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261700534_SetNullable.cs" />
+    <Compile Include="Migrations\201709261700534_SetNullable.Designer.cs">
+      <DependentUpon>201709261700534_SetNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709261702450_UpdateBirthdateToNull.cs" />
+    <Compile Include="Migrations\201709261702450_UpdateBirthdateToNull.Designer.cs">
+      <DependentUpon>201709261702450_UpdateBirthdateToNull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -325,6 +353,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709251756569_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201709251756569_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261527590_AddNameToMembershipType.resx">
+      <DependentUpon>201709261527590_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261532187_UpdateNameInMembershipTypes.resx">
+      <DependentUpon>201709261532187_UpdateNameInMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261548293_UpdateFixWrongData.resx">
+      <DependentUpon>201709261548293_UpdateFixWrongData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261631313_AddBirthdateToCustomers.resx">
+      <DependentUpon>201709261631313_AddBirthdateToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261633155_UpdateBirthdateCustomers.resx">
+      <DependentUpon>201709261633155_UpdateBirthdateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261700534_SetNullable.resx">
+      <DependentUpon>201709261700534_SetNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709261702450_UpdateBirthdateToNull.resx">
+      <DependentUpon>201709261702450_UpdateBirthdateToNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
