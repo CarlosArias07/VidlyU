@@ -251,9 +251,42 @@
     <Compile Include="Migrations\201709261702450_UpdateBirthdateToNull.Designer.cs">
       <DependentUpon>201709261702450_UpdateBirthdateToNull.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709271514130_MovieAttributesGenreCreated.cs" />
+    <Compile Include="Migrations\201709271514130_MovieAttributesGenreCreated.Designer.cs">
+      <DependentUpon>201709271514130_MovieAttributesGenreCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271517160_PopulateGenres.cs" />
+    <Compile Include="Migrations\201709271517160_PopulateGenres.Designer.cs">
+      <DependentUpon>201709271517160_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271531080_PopulateMovies.cs" />
+    <Compile Include="Migrations\201709271531080_PopulateMovies.Designer.cs">
+      <DependentUpon>201709271531080_PopulateMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271615001_Try1.cs" />
+    <Compile Include="Migrations\201709271615001_Try1.Designer.cs">
+      <DependentUpon>201709271615001_Try1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271658527_ChangingFKColumn.cs" />
+    <Compile Include="Migrations\201709271658527_ChangingFKColumn.Designer.cs">
+      <DependentUpon>201709271658527_ChangingFKColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271830412_ChangingFKColumn2.cs" />
+    <Compile Include="Migrations\201709271830412_ChangingFKColumn2.Designer.cs">
+      <DependentUpon>201709271830412_ChangingFKColumn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271831493_ChangingFKColumn3.cs" />
+    <Compile Include="Migrations\201709271831493_ChangingFKColumn3.Designer.cs">
+      <DependentUpon>201709271831493_ChangingFKColumn3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271903463_ChangingFKColumn4.cs" />
+    <Compile Include="Migrations\201709271903463_ChangingFKColumn4.Designer.cs">
+      <DependentUpon>201709271903463_ChangingFKColumn4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -326,6 +359,7 @@
     <Content Include="Views\Customers\CustomersList.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\MoviesList.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -374,6 +408,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709261702450_UpdateBirthdateToNull.resx">
       <DependentUpon>201709261702450_UpdateBirthdateToNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271514130_MovieAttributesGenreCreated.resx">
+      <DependentUpon>201709271514130_MovieAttributesGenreCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271517160_PopulateGenres.resx">
+      <DependentUpon>201709271517160_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271531080_PopulateMovies.resx">
+      <DependentUpon>201709271531080_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271615001_Try1.resx">
+      <DependentUpon>201709271615001_Try1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271658527_ChangingFKColumn.resx">
+      <DependentUpon>201709271658527_ChangingFKColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271830412_ChangingFKColumn2.resx">
+      <DependentUpon>201709271830412_ChangingFKColumn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271831493_ChangingFKColumn3.resx">
+      <DependentUpon>201709271831493_ChangingFKColumn3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271903463_ChangingFKColumn4.resx">
+      <DependentUpon>201709271903463_ChangingFKColumn4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
