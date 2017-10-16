@@ -68,10 +68,10 @@ namespace Vidly.Controllers
 
         public ActionResult CustomersList()
         {
-            //Including related data (foreign key) is called ego loading
-            var customersList = _context.Customers.Include(c => c.MembershipType).ToList();
+            //Including related data (foreign key) from a related model is called ego loading
+            //var customersList = _context.Customers.Include(c => c.MembershipType).ToList(); <- This was commented because Datatables structure code
 
-            return View(customersList);
+            return View();
         }
 
         public ActionResult Details(int? id)
