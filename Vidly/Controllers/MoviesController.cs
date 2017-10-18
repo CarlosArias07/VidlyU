@@ -55,10 +55,7 @@ namespace Vidly.Controllers
 
         public ActionResult MoviesList()
         {
-            //Ego loading
-            var movies = _context.Movies.Include(m => m.Genre).ToList();
-
-            return View(movies);
+            return View();
         }
 
         public ActionResult Details(int? id)
