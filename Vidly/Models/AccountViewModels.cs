@@ -3,12 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Vidly.Models
 {
-    public class ExternalLoginConfirmationViewModel
+    #region ExternalLoginConfirmationViewModel
+    /*public class ExternalLoginConfirmationViewModel
     {
         [Required]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }
-    }
+    }*/
+    #endregion
 
     public class ExternalLoginListViewModel
     {
@@ -62,7 +64,8 @@ namespace Vidly.Models
         public bool RememberMe { get; set; }
     }
 
-    public class RegisterViewModel
+    #region RegisterViewModel
+    /*public class RegisterViewModel
     {
         [Required]
         [StringLength(50)]
@@ -87,7 +90,8 @@ namespace Vidly.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
-    }
+    }*/
+    #endregion
 
     public class ResetPasswordViewModel
     {
