@@ -347,6 +347,18 @@
     <Compile Include="Migrations\201710241447150_AddPhoneToApplicationUser.Designer.cs">
       <DependentUpon>201710241447150_AddPhoneToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710271553010_AddRental.cs" />
+    <Compile Include="Migrations\201710271553010_AddRental.Designer.cs">
+      <DependentUpon>201710271553010_AddRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710271558006_RentalsModelModified.cs" />
+    <Compile Include="Migrations\201710271558006_RentalsModelModified.Designer.cs">
+      <DependentUpon>201710271558006_RentalsModelModified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710271627434_RentalModelModified2.cs" />
+    <Compile Include="Migrations\201710271627434_RentalModelModified2.Designer.cs">
+      <DependentUpon>201710271627434_RentalModelModified2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -695,6 +707,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710241447150_AddPhoneToApplicationUser.resx">
       <DependentUpon>201710241447150_AddPhoneToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710271553010_AddRental.resx">
+      <DependentUpon>201710271553010_AddRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710271558006_RentalsModelModified.resx">
+      <DependentUpon>201710271558006_RentalsModelModified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710271627434_RentalModelModified2.resx">
+      <DependentUpon>201710271627434_RentalModelModified2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
