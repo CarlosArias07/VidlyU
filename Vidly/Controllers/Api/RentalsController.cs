@@ -18,23 +18,49 @@ namespace Vidly.Controllers.Api
             _context = new ApplicationDbContext();
         }
 
+        // GET /api/rentals
+        public IHttpActionResult GetRentals()
+        {
+            var rentalDtos = _context.Rentals.ToList();
+
+            return Ok(rentalDtos);
+        }
+
         // POST /api/rentals
         [HttpPost]
         public IHttpActionResult CreateNewRental(NewRentalDto newRental)
         {
+            if (newRental.MovieIds.Count == 0)
+                return BadRequest("No movie Ids have been given");
 
-            /*var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == newRental.CustomerId);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == newRental.CustomerId);
 
-            if (customerInDb == null)
-                return NotFound();*/
+            if (customer == null)
+                return BadRequest("CustomerId is not valid");
 
-            foreach (var movieId in newRental.MovieIds)
+            var movies = _context.Movies.Where(m => newRental.MovieIds.Contains(m.Id)).ToList();
+
+            if (movies.Count != newRental.MovieIds.Count)
+                return BadRequest("One or more MovieIds are invalid");
+
+            foreach (var movie in movies)
             {
-                Rental rental = new Rental();
-                rental.CustomerId = newRental.CustomerId;
-                rental.MovieId = movieId;
+                if (movie.NumberAvailable == 0)
+                    return BadRequest("Movie is not available");
+
+                movie.NumberAvailable--;
+
+                var rental = new Rental
+                {
+                    Customer = customer,
+                    Movie = movie,
+                    DateRented = DateTime.Now
+                };
+
                 _context.Rentals.Add(rental);
             }
+
+            _context.SaveChanges();
 
             return Ok();
         }
